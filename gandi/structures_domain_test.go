@@ -90,6 +90,7 @@ func TestFlattenContact(t *testing.T) {
 					OrgName:     "Test Org",
 					Phone:       "+1.2123333444",
 					City:        "Libreville",
+					State:       "Test",
 					Zip:         "12345",
 				}},
 			want: map[string]interface{}{
@@ -102,6 +103,7 @@ func TestFlattenContact(t *testing.T) {
 				"organisation": "Test Org",
 				"phone":        "+1.2123333444",
 				"city":         "Libreville",
+				"state":        "Test",
 				"zip":          "12345",
 			},
 		},
